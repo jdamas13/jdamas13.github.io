@@ -1,178 +1,161 @@
 <!DOCTYPE html>
 <html>
-<title>JS Joana Damas</title>
+<title>Joana Damas</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="/lib/w3.css">
+<link rel="stylesheet" href="lib/w3.css">
+<link rel="stylesheet" href="lib/highcharts.css">
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-highway.css">
-<script type="text/javasript" src="/lib/highcharts.js"></script>
+
+<script type="text/javasript" src="lib/highcharts.js"></script>
 <script src="https://code.highcharts.com/highcharts.js"></script>
 <script src="https://code.highcharts.com/modules/variable-pie.js"></script>
 <script src="https://code.highcharts.com/modules/exporting.js"></script>
 <script src="https://code.highcharts.com/modules/export-data.js"></script>
 <script src="https://code.highcharts.com/modules/accessibility.js"></script>
-<style>
-html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
-</style>
+
+<style>html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}</style>
+
 <body class="w3-light-grey">
 
 <!-- Page Container -->
 <div class="w3-content w3-margin-top" style="max-width:1400px;">
 
-  <!-- The Grid -->
-  <div class="w3-row-padding">
+	<!-- The Grid -->
+	<div class="w3-row-padding">
   
-    <!-- Left Column -->
-    <div class="w3-third">
-    
-      <div class="w3-white w3-text-grey w3-card-4">
-        <div class="w3-display-container">
-          <img src="https://github.com/jdamas13/jdamas13.github.io/raw/master/images/joana2_cut.jpg" style="width:100%" alt="Photo">
-          <div class="w3-display-bottomleft w3-container w3-text-cvred">
-            <h2>Joana Damas</h2>
-          </div>
-        </div>
-        <div class="w3-container">
-          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-cvred"></i>Postdoc</p>
-          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-cvred"></i>Davis, CA, USA</p>
-          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-cvred"></i>jmdamas@ucdavis.edu</p>
-          <p><i class="fa fa-twitter fa-fw w3-margin-right w3-large w3-text-cvred"></i><a href="https://twitter.com/joana_damas">joana_damas</a></p>
-          <hr>
-          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-cvred"></i>Skills</b></p>
-          <p>Scripting - Unix, perl, R</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-cvred" style="height:24px;width:80%"></div>
-          </div>
-          <p>Scripting - MySQL, html, JavaScript</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-cvred" style="height:24px;width:40%"></div>
-          </div>
-          <p>DNA extraction, purification, PCR, electrophoresis</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-cvred" style="height:24px;width:90%"></div>
-          </div>
-          <p>Cell culture, FISH</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-cvred" style="height:24px;width:40%"></div>
-          </div>
-          <br>
+		<!-- Left Column -->
+		<div class="w3-third">
+	
+			<div class="w3-white w3-text-grey w3-card-4">
+				<div class="w3-display-container">
+		  			<img src="https://github.com/jdamas13/jdamas13.github.io/raw/master/images/joana2_cut.jpg" style="width:100%" alt="Photo">
+		  			<div class="w3-display-bottomleft w3-container w3-text-cvred">
+						<h2>Joana Damas</h2>
+		  			</div>
+				</div>
+				<div class="w3-container">
+		  			<p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-cvred"></i>Postdoc</p>
+		  			<p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-cvred"></i>Davis, CA, USA</p>
+		  			<p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-cvred"></i>jmdamas@ucdavis.edu</p>
+		  			<p><i class="fa fa-twitter fa-fw w3-margin-right w3-large w3-text-cvred"></i><a href="https://twitter.com/joana_damas">joana_damas</a></p>
+		  			<hr>
+		  			<p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-cvred"></i>Skills</b></p>
+		  			<p>Scripting - Unix, perl, R</p><div class="w3-light-grey w3-round-xlarge w3-small"><div class="w3-container w3-center w3-round-xlarge w3-cvred" style="height:24px;width:80%"></div></div>
+		  			<p>Scripting - MySQL, html, JavaScript</p><div class="w3-light-grey w3-round-xlarge w3-small"><div class="w3-container w3-center w3-round-xlarge w3-cvred" style="height:24px;width:40%"></div></div>
+		  			<p>DNA extraction, purification, PCR, electrophoresis</p><div class="w3-light-grey w3-round-xlarge w3-small"><div class="w3-container w3-center w3-round-xlarge w3-cvred" style="height:24px;width:90%"></div></div>
+		  			<p>Cell culture, FISH</p><div class="w3-light-grey w3-round-xlarge w3-small"><div class="w3-container w3-center w3-round-xlarge w3-cvred" style="height:24px;width:40%"></div></div>
+		  			<br>
+		  			<p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-cvred"></i>Languages</b></p>
+		  			<p>Portuguese</p><div class="w3-light-grey w3-round-xlarge"><div class="w3-round-xlarge w3-cvred" style="height:24px;width:100%"></div></div>
+		  			<p>English</p><div class="w3-light-grey w3-round-xlarge"><div class="w3-round-xlarge w3-cvred" style="height:24px;width:75%"></div></div>
+		  			<br>
+				</div>
+			</div><br>
+		<!-- End Left Column -->
+		</div>
 
-          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-cvred"></i>Languages</b></p>
-          <p>Portuguese</p>
-          <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-cvred" style="height:24px;width:100%"></div>
-          </div>
-          <p>English</p>
-          <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-cvred" style="height:24px;width:75%"></div>
-          </div>
-          <br>
-        </div>
-      </div><br>
+		<!-- Right Column -->
+		<div class="w3-twothird">
+			<div class="w3-container w3-card w3-white w3-margin-bottom">
+				<h2 class="w3-text-grey w3-padding-16"><i class="fa fa-user fa-fw w3-margin-right w3-xxlarge w3-text-cvred"></i>About me</h2>
+				<div class="w3-container">
+		  			<p>My main research interest is the study of chromosome evolution. Namely, to understand the forces that shape genomes through evolution and unravel the role of chromosomal rearrangements in adaptation and speciation. To do that, I use comparative and functional genomics’ tools, paired with high performance computing, to process and analyze whole-genome sequences of living species. My current main projects are:
+					<ol>
+						<li> Vertebrate chromosome evolution: reconstruction of ancestral genomes across the vertebrate’s phylogeny, identification and dating of chromosomal rearrangements, and their link with species divergence and phenotype evolution;</li>
+						<li>Yeasts’ chromosome evolution: unraveling the role of chromosomal rearrangements in the lipid production and accumulation mechanisms.</li>
+					</ol>
+					<p>Other project include:</p>
+					<ol>	
+						<li>Evaluation of genome assemblies: utilization of comparative genomics tools to identify problematic regions in genome assemblies;</li>
+						<li>Identification of species at risk for SARS-CoV-2 infection: creation of a ranking system, based of protein sequence similarity to the human receptor for SARS-CoV-2 (ACE2), for the prediction of propensity for ACE2/SARS-CoV-2 binding in vertebrate species.</li>
+					</ol>
+		  			<br>
+				</div>
+			</div>
 
-    <!-- End Left Column -->
-    </div>
+			<div class="w3-container w3-card w3-white w3-margin-bottom">
+				<h2 class="w3-text-grey w3-padding-16"><i class="fa fa-graduation-cap fa-fw w3-margin-right w3-xxlarge w3-text-cvred"></i>Education</h2>
+				<img src="images/timeline.png" style="width:100%" alt="Timeline">
+				<h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-cvred"></i>Work experience</h2>
+				<p>For more details click <a href="https://twitter.com/joana_damas">here</a>.</p>
+			</div>
+		</div>
+		<div class="w3-third">
+			<div class="w3-container w3-card w3-white w3-margin-bottom">
+				<h2 class="w3-text-grey w3-padding-16"><i class="fas fa-newspaper fa-fw w3-margin-right w3-xxlarge w3-text-cvred"></i>Publications</h2>
+				<p>For more details click <a href="https://twitter.com/joana_damas">here</a>.</p>
+				<figure class="highcharts-figure">
+					<div id="container"></div>
+					<p class="highcharts-description">
+					CHANGEDVariable radius pie charts can be used to visualize a
+					second dimension in a pie chart. In this chart, the more
+					densely populated countries are drawn further out, while the
+					slice width is determined by the size of the country.
+					</p>
+				</figure>
+			</div>
+		
+		
+		
 
-<!-- Right Column -->
-<div class="w3-twothird">
-	<div class="w3-container w3-card w3-white w3-margin-bottom">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-user fa-fw w3-margin-right w3-xxlarge w3-text-cvred"></i>About me</h2>
-        <div class="w3-container">
-          <p>My main research interest is the study of chromosome evolution. Namely, to understand the forces that shape genomes through evolution and unravel the role of chromosomal rearrangements in adaptation and speciation. To do that, I use comparative and functional genomics’ tools, paired with high performance computing, to process and analyze whole-genome sequences of living species. My current main projects are:
-          	<ol>
-          		<li> Vertebrate chromosome evolution: reconstruction of ancestral genomes across the vertebrate’s phylogeny, identification and dating of chromosomal rearrangements, and their link with species divergence and phenotype evolution;</li>
-          		<li>Yeasts’ chromosome evolution: unraveling the role of chromosomal rearrangements in the lipid production and accumulation mechanisms.</li>
-          	</ol>
-          	<p>Other project include:</p>
-          	<ol>	
-          		<li>Evaluation of genome assemblies: utilization of comparative genomics tools to identify problematic regions in genome assemblies;</li>
-          		<li>Identification of species at risk for SARS-CoV-2 infection: creation of a ranking system, based of protein sequence similarity to the human receptor for SARS-CoV-2 (ACE2), for the prediction of propensity for ACE2/SARS-CoV-2 binding in vertebrate species.</li>
-          	</ol>
-          <br>
-        </div>
-      	</div>
+	   <div class="w3-container w3-card w3-white w3-margin-bottom">
+		<h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-cvred"></i>Work Experience</h2>
+		<div class="w3-container">
+		  <h5 class="w3-opacity"><b>Postdoctoral research associate</b></h5>
+		  <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Oct 2017 - <span class="w3-tag w3-cvred w3-round">Current</span></h6>
+		  <p>The Genome Center, University of California - Davis, USA<br>
+		  Supervisor: Professor Harris A. Lewin</p>
+		  <hr>
+		</div>
+		<div class="w3-container">
+		  <h5 class="w3-opacity"><b>PhD researcher</b></h5>
+		  <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2014 - Sep 2017</h6>
+		  <p>Royal Veterinary College, University of London, UK<br>
+		  Supervisor: Dr. Denis Larkin</p>
+		  <hr>
+		</div>
+		<div class="w3-container">
+		  <h5 class="w3-opacity"><b>Research fellow</b></h5>
+		  <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Oct 2010 - Nov 2013</h6>
+		  <p>Institute of Molecular Pathology and Immunology of the University of Porto, Portugal<br>
+		  Supervisor: Dr. Filipe Pereira</p>
+		  <hr>
+		</div>
+		<div class="w3-container">
+		  <h5 class="w3-opacity"><b>MSc researcher</b></h5>
+		  <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sep 2008 - Oct 2010</h6>
+		  <p>Institute of Molecular Pathology and Immunology of the University of Porto, Portugal<br>
+		  Supervisor: Dr. Leonor Gusmao</p>
+		  <br>
+		</div>
+	  </div>
 
-      	<div class="w3-container w3-card w3-white w3-margin-bottom">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-graduation-cap fa-fw w3-margin-right w3-xxlarge w3-text-cvred"></i>Education</h2>
-        <img src="/images/timeline.png" style="width:100%" alt="Timeline">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-cvred"></i>Work experience</h2>
-       	</div>
-</div>
-<div class="w3-third">
-	<div class="w3-container w3-card w3-white w3-margin-bottom">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-newspaper fa-fw w3-margin-right w3-xxlarge w3-text-cvred"></i>Publications</h2>
-        <figure class="highcharts-figure">
-	<div id="container"></div>
-  		<p class="highcharts-description">
-    		CHANGEDVariable radius pie charts can be used to visualize a
-    		second dimension in a pie chart. In this chart, the more
-    		densely populated countries are drawn further out, while the
-    		slice width is determined by the size of the country.
-  		</p>
-		</figure>
-       	</div>
-	    
-	    
-	    
+	  <div class="w3-container w3-card w3-white">
+		<h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
+		<div class="w3-container">
+		  <h5 class="w3-opacity"><b>W3Schools.com</b></h5>
+		  <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Forever</h6>
+		  <p>Web Development! All I need to know in one place</p>
+		  <hr>
+		</div>
+		<div class="w3-container">
+		  <h5 class="w3-opacity"><b>London Business School</b></h5>
+		  <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2013 - 2015</h6>
+		  <p>Master Degree</p>
+		  <hr>
+		</div>
+		<div class="w3-container">
+		  <h5 class="w3-opacity"><b>School of Coding</b></h5>
+		  <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2010 - 2013</h6>
+		  <p>Bachelor Degree</p><br>
+		</div>
+	  </div>
 
-       <div class="w3-container w3-card w3-white w3-margin-bottom">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-cvred"></i>Work Experience</h2>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Postdoctoral research associate</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Oct 2017 - <span class="w3-tag w3-cvred w3-round">Current</span></h6>
-          <p>The Genome Center, University of California - Davis, USA<br>
-          Supervisor: Professor Harris A. Lewin</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>PhD researcher</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2014 - Sep 2017</h6>
-          <p>Royal Veterinary College, University of London, UK<br>
-          Supervisor: Dr. Denis Larkin</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Research fellow</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Oct 2010 - Nov 2013</h6>
-          <p>Institute of Molecular Pathology and Immunology of the University of Porto, Portugal<br>
-          Supervisor: Dr. Filipe Pereira</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>MSc researcher</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sep 2008 - Oct 2010</h6>
-          <p>Institute of Molecular Pathology and Immunology of the University of Porto, Portugal<br>
-          Supervisor: Dr. Leonor Gusmao</p>
-          <br>
-        </div>
-      </div>
-
-      <div class="w3-container w3-card w3-white">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>W3Schools.com</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Forever</h6>
-          <p>Web Development! All I need to know in one place</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>London Business School</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2013 - 2015</h6>
-          <p>Master Degree</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>School of Coding</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2010 - 2013</h6>
-          <p>Bachelor Degree</p><br>
-        </div>
-      </div>
-
-    <!-- End Right Column -->
-    </div>
-    
+	<!-- End Right Column -->
+	</div>
+	
   <!-- End Grid -->
   </div>
   
